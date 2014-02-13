@@ -1,0 +1,12 @@
+{
+  "name": "severnbot",
+  "version": "1.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request": "*",
+    "cheerio": "*",
+    "twit": "*"
+  }
+}
