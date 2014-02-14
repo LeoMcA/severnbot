@@ -84,7 +84,7 @@ function scrape(){
       storage.setItem(station.name, toSave);
 
       // create string for twitter
-      var tweet = '#' + station.name + ': ' + level + 'm at ' + pad(date.getHours()) + ':' + pad(date.getMinutes()) + '; Daily Peak: ' + saved.peak + 'm at ' + pad(saved.peakDate.getHours()) + ':' + pad(saved.peakDate.getMinutes()) + ' #worcesterfloods';
+      var tweet = '#' + station.name + ': ' + level + 'm at ' + pad(date.getHours()) + ':' + pad(date.getMinutes()) + '; Daily Peak: ' + saved.peak + 'm at ' + pad(toSave.peakDate.getHours()) + ':' + pad(toSave.peakDate.getMinutes()) + ' #worcesterfloods';
 
       //console.log(unparsedLevel, unparsedTime);
       console.log(tweet);
