@@ -30,6 +30,9 @@ function scrape(){
       $ = cheerio.load(body);
       var unparsedLevel = $('#station-detail-left .plain_text p').eq(0).text();
       var unparsedTime = $('#station-detail-left .plain_text p').eq(1).text();
+
+      if(unparsedTime === undefined) return;
+
       var rawTimeString = unparsedTime.split('This measurement was recorded at ')[1].split('.')[0];
       var timeString = rawTimeString.split(' on ')[0];
       var timeArray = timeString.split(':');
